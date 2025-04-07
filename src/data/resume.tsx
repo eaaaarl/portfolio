@@ -1,5 +1,16 @@
 import { Icons } from "@/components/icons";
-import { Box, Cloud, Code, Coffee, Container, Database, FileCode2, HomeIcon, LayoutTemplate, Terminal } from "lucide-react";
+import {
+  Box,
+  Cloud,
+  Code,
+  Coffee,
+  Container,
+  Database,
+  FileCode2,
+  HomeIcon,
+  LayoutTemplate,
+  Terminal,
+} from "lucide-react";
 
 export const DATA = {
   devName: "Eaaaarl",
@@ -26,27 +37,21 @@ export const DATA = {
     { name: "Kubernetes", icon: <Cloud className="w-4 h-4" /> },
     { name: "Java", icon: <Coffee className="w-4 h-4" /> },
     { name: "PHP", icon: <Code className="w-4 h-4" /> },
-    { name: "Laravel", icon: <LayoutTemplate className="w-4 h-4" /> }
+    { name: "Laravel", icon: <LayoutTemplate className="w-4 h-4" /> },
   ],
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-  ],
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
     social: {
       GitHub: {
         name: "GitHub",
         url: "https://github.com/eaaaarl",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "",
         icon: Icons.linkedin,
-
         navbar: true,
       },
       Facebook: {
@@ -56,11 +61,17 @@ export const DATA = {
 
         navbar: true,
       },
+
+      Resume: {
+        name: "Resume",
+        url: "/resume.pdf",
+        icon: Icons.resume,
+        navbar: true,
+      },
       email: {
         name: "Send Email",
         url: "#",
         icon: Icons.email,
-
         navbar: false,
       },
     },
@@ -101,7 +112,7 @@ export const DATA = {
       logoUrl: "/asnhs-logo.png",
       start: "2018",
       end: "2020",
-      description: ""
+      description: "",
     },
     {
       school: "Northern Eastern Mindanao State University - Lianga Campus",
@@ -110,8 +121,9 @@ export const DATA = {
       logoUrl: "/nemsu-logo.png",
       start: "2024",
       end: "Present",
-      description: "3rd Year Computer Science Student • Expected Graduation 2026"
-    }
+      description:
+        "3rd Year Computer Science Student • Expected Graduation 2026",
+    },
   ],
   projects: [
     {
@@ -153,5 +165,4 @@ export const DATA = {
       links: [],
     },
   ],
-
 } as const;
