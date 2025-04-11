@@ -1,9 +1,7 @@
 import { Icons } from "@/components/icons";
 import {
   Box,
-  Cloud,
   Code,
-  Coffee,
   Container,
   Database,
   FileCode2,
@@ -28,16 +26,14 @@ export const DATA = {
     { name: "React", icon: <Code className="w-4 h-4" /> },
     { name: "Vue.js", icon: <Code className="w-4 h-4" /> },
     { name: "Next.js", icon: <Box className="w-4 h-4" /> },
-    { name: "Typescript", icon: <FileCode2 className="w-4 h-4" /> },
-    { name: "Node.js", icon: <Terminal className="w-4 h-4" /> },
-    { name: "Express.js", icon: <Terminal className="w-4 h-4" /> },
-    { name: "Python", icon: <Code className="w-4 h-4" /> },
-    { name: "Postgres", icon: <Database className="w-4 h-4" /> },
-    { name: "Docker", icon: <Container className="w-4 h-4" /> },
-    { name: "Kubernetes", icon: <Cloud className="w-4 h-4" /> },
-    { name: "Java", icon: <Coffee className="w-4 h-4" /> },
     { name: "PHP", icon: <Code className="w-4 h-4" /> },
     { name: "Laravel", icon: <LayoutTemplate className="w-4 h-4" /> },
+    { name: "Node.js", icon: <Terminal className="w-4 h-4" /> },
+    { name: "Express.js", icon: <Terminal className="w-4 h-4" /> },
+    { name: "Nest.js", icon: <Terminal className="w-4 h-4" /> },
+    { name: "Typescript", icon: <FileCode2 className="w-4 h-4" /> },
+    { name: "Postgres", icon: <Database className="w-4 h-4" /> },
+    { name: "Docker", icon: <Container className="w-4 h-4" /> },
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
@@ -80,27 +76,15 @@ export const DATA = {
   work: [
     {
       company: "Freelance Web Development",
-      badges: ["Next.js", "React", "Laravel"],
+      badges: ["NextJS"],
       location: "Remote",
-      title: "Student Project Developer",
+      title: "",
       logoUrl: "/freelance.png",
-      start: "2023",
-      end: "Present",
-      href: "https://github.com/eaaaarl",
-      description:
-        "Assist fellow students with their academic projects, providing web development solutions and technical guidance. Create custom web applications tailored to specific project requirements using modern frameworks like Next.js and Laravel. Focus on delivering clean, well-documented code while helping others understand web development concepts.",
-    },
-    {
-      company: "Personal Portfolio",
-      badges: ["Full Stack", "Open Source"],
-      location: "Remote",
-      title: "Self-Directed Developer",
-      logoUrl: "/projects.png",
       start: "2022",
       end: "Present",
       href: "https://github.com/eaaaarl",
       description:
-        "Actively develop personal projects to strengthen full-stack development skills. Create and maintain project boilerplates for React.js and Laravel to accelerate development workflows. Build portfolio projects focusing on modern web technologies and best practices. Regularly contribute to personal GitHub repositories to document learning progress.",
+        "Assist fellow students with their academic projects, providing web development solutions and technical guidance. Create custom web applications tailored to specific project requirements using modern frameworks like Next.js and Laravel. Focus on delivering clean, well-documented code while helping others understand web development concepts.",
     },
   ],
 
