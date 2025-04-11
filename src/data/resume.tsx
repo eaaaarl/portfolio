@@ -14,7 +14,7 @@ export const DATA = {
   devName: "Eaaaarl",
   name: "Earl Dominic Ado",
   initials: "EA",
-  url: "https://dillion.io",
+  url: "https://eaaaarl.vercel.app",
   location: "San Francisco, Agusan Del Sur",
   locationLink: "https://maps.app.goo.gl/nJXDQFTM5aSTDpeU9",
   description:
@@ -78,7 +78,7 @@ export const DATA = {
       company: "Freelance Web Development",
       badges: ["NextJS"],
       location: "Remote",
-      title: "",
+      title: "Full Stack Web Developer",
       logoUrl: "/freelance.png",
       start: "2022",
       end: "Present",
