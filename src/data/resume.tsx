@@ -17,7 +17,8 @@ export const DATA = {
   url: "https://eaaaarl.vercel.app",
   location: "San Francisco, Agusan Del Sur",
   locationLink: "https://maps.app.goo.gl/nJXDQFTM5aSTDpeU9",
-  description: "",
+  description:
+    "“Simplicity is the ultimate sophistication.” — Leonardo da Vinci",
   summary:
     "I'm a passionate Full Stack Developer dedicated to building modern web applications that solve real problems. Currently expanding my backend skills while pursuing new development challenges. Building tomorrow's solutions with today's code.",
   avatarUrl: "/me.jpg",

@@ -24,7 +24,7 @@ export default function Page() {
                 text={`${DATA.devName}`}
               />
               <BlurFadeText
-                className="max-w-[600px] md:text-xl"
+                className="max-w-[600px] italic"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
