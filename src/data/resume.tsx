@@ -11,16 +11,15 @@ import {
 } from "lucide-react";
 
 export const DATA = {
-  devName: "Eaaaarl",
+  devName: "Earl Dominic Ado",
   name: "Earl Dominic Ado",
   initials: "EA",
   url: "https://eaaaarl.vercel.app",
   location: "San Francisco, Agusan Del Sur",
   locationLink: "https://maps.app.goo.gl/nJXDQFTM5aSTDpeU9",
-  description:
-    "Computer Science student and aspiring Software Engineer. I love building innovative solutions and exploring modern technologies. Passionate about full-stack development and creating enterprise-level applications.",
+  description: "",
   summary:
-    "As a dedicated Computer Science student, I'm actively pursuing my path in software engineering through hands-on project development. I've built several applications using Next.js and modern web technologies, focusing on creating efficient and scalable solutions. Outside of academics, I'm constantly working on side projects to deepen my understanding of full-stack development and enterprise architecture. I believe in continuous learning and staying current with industry trends. When I'm not coding, you'll find me upskilling in modern tech stacks and exploring new ways to build robust applications that solve real-world problems.",
+    "I'm a passionate Full Stack Developer dedicated to building modern web applications that solve real problems. Currently expanding my backend skills while pursuing new development challenges. Building tomorrow's solutions with today's code.",
   avatarUrl: "/me.jpg",
   skillsWithIcons: [
     { name: "React", icon: <Code className="w-4 h-4" /> },
@@ -116,7 +115,7 @@ export const DATA = {
       dates: "Sep 2024 - Dec 2024",
       active: true,
       description:
-        "Developed a comprehensive Faculty Evaluation System for North Eastern Mindanao State University - Lianga Campus (NEMSU LC). This web application streamlines the evaluation process by allowing students to assess faculty performance digitally, replacing traditional paper-based methods. The system features secure authentication, automated evaluation periods, and detailed reporting capabilities for administration.",
+        "FEVALS is a designed and developed a faculty performance evaluation system for educational institutions, featuring secure role-based access, dynamic evaluation forms with customizable rubrics, real-time analytics dashboards, and automated report generation",
       technologies: [
         "Next.js",
         "Typescript",
@@ -129,7 +128,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://fes-nlc.vercel.app",
+          href: "",
           icon: <Icons.globe className="size-3" />,
         },
       ],
