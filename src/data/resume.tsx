@@ -136,6 +136,84 @@ export const DATA = {
       image: "/fesnlc.png",
       video: "",
     },
+    {
+      title: "Barangay Information System - EBIS",
+      href: "#",
+      dates: "June 2024 - August 2024",
+      active: true,
+      description:
+        "EBIS is a designed and developed a local government platform for managing resident data, issuing documents (clearances, permits), tracking complaints, and generating analytics. Includes SMS notifications via Semaphore API for real-time updates.",
+      technologies: [
+        "PHP",
+        "Semaphore",
+        "jQuery",
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "Admin LTE",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/ebis.png",
+      video: "",
+    },
+    {
+      title: "iMovia",
+      href: "#",
+      dates: "April 2025 - May 2025",
+      active: true,
+      description:
+        "A feature-rich movie discovery app built with React Native that showcases trending films, personalized recommendations, and secure user authentication. Leveraging TMDB's extensive API, iMovia delivers a seamless cinematic experience with modern UI/UX principles.",
+      technologies: [
+        "Expo",
+        "React Native",
+        "Firebase Authentication",
+        "Redux Toolkit",
+        "Tailwind CSS",
+        "TypeScript",
+        "TMDB API",
+      ],
+      links: [
+        {
+          type: "Mobile",
+          href: "",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/imovia.jpg",
+      video: "",
+    },
+    {
+      title: "ENSTRA",
+      href: "#",
+      dates: "May 2025 - Current",
+      active: true,
+      description:
+        "A digital enrollment system for National Service Training Program (NSTP) components (CWTS, ROTC, and LTS) that streamlines student registration, class management, and administrative tracking. The platform modernizes traditional paper-based processes with secure online workflows.",
+      technologies: [
+        "React Vite",
+        "Express JS",
+        "Docker",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Redux Toolkit",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/default.jpg",
+      video: "",
+    },
   ],
   events: [
     {
