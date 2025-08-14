@@ -4,6 +4,7 @@ import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import SkillsSection from "@/components/skill-icon";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -46,12 +47,22 @@ export default function Page() {
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
             {DATA.summary}
           </Markdown>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            <Link
+              href={DATA.contact.social.Resume.url}
+              className="underline cursor-pointer hover:text-gray-800 dark:hover:text-gray-200"
+            >
+              Check my resume
+            </Link>
+            {" "}
+            for detailed experience and projects
+          </p>
         </BlurFade>
       </section>
 
       <SkillsSection />
 
-      <section id="projects">
+      {/* <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -91,7 +102,7 @@ export default function Page() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>

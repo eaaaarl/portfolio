@@ -36,6 +36,7 @@ const SkillsSection = () => {
     "firebase",
     "mongodb",
     "prisma",
+    "supabase",
   ];
 
   return (
