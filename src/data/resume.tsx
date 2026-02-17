@@ -19,22 +19,7 @@ export const DATA = {
   locationLink: "https://maps.app.goo.gl/nJXDQFTM5aSTDpeU9",
   description:
     "“Simplicity is the ultimate sophistication.” — Leonardo da Vinci",
-  summary:
-    "I'm a passionate Full Stack Developer dedicated to building modern web applications that solve real problems. Currently expanding my backend skills while pursuing new development challenges. Building tomorrow's solutions with today's code.",
-  avatarUrl: "/me.jpg",
-  skillsWithIcons: [
-    { name: "React", icon: <Code className="w-4 h-4" /> },
-    { name: "Vue.js", icon: <Code className="w-4 h-4" /> },
-    { name: "Next.js", icon: <Box className="w-4 h-4" /> },
-    { name: "PHP", icon: <Code className="w-4 h-4" /> },
-    { name: "Laravel", icon: <LayoutTemplate className="w-4 h-4" /> },
-    { name: "Node.js", icon: <Terminal className="w-4 h-4" /> },
-    { name: "Express.js", icon: <Terminal className="w-4 h-4" /> },
-    { name: "Nest.js", icon: <Terminal className="w-4 h-4" /> },
-    { name: "Typescript", icon: <FileCode2 className="w-4 h-4" /> },
-    { name: "Postgres", icon: <Database className="w-4 h-4" /> },
-    { name: "Docker", icon: <Container className="w-4 h-4" /> },
-  ],
+  summary: "Hi, I'm Earl. A Full Stack Developer who enjoys building things from the ground up web apps, mobile apps, and everything in between. I like both the problem solving and creative side of development, and I'm always experimenting with new ideas and technologies. I care about writing clean, maintainable code and building things that actually help people. Always open to new projects and challenges that push me to grow.", avatarUrl: "/me.jpg",
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     social: {

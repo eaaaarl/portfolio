@@ -10,6 +10,11 @@ const nextConfig = {
         hostname: "skillicons.dev",
         pathname: "/icons",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.simpleicons.org",
+        pathname: "/**",
+      },
     ],
   },
 };

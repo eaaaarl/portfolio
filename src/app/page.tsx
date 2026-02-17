@@ -13,54 +13,82 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10">
-      <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="gap-2 flex justify-between">
-            <div className="flex-col flex flex-1 space-y-1.5">
+    <main className="flex flex-col min-h-[100dvh] space-y-16">
+
+      {/* ── HERO ─────────────────────────────────────────────── */}
+      <section id="hero" className="pt-4">
+        <div className="mx-auto w-full max-w-2xl">
+          <div className="flex justify-between items-start gap-6">
+
+            {/* Left: name + tagline */}
+            <div className="flex flex-col flex-1 gap-3">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                className="text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
                 text={`${DATA.devName}`}
               />
+
+              {/* Subtle role badge */}
+              <BlurFade delay={BLUR_FADE_DELAY * 2}>
+                <span className="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-full border border-neutral-200 dark:border-neutral-800 text-neutral-500 dark:text-neutral-400 w-fit">
+                  <span className="size-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                  Available for work
+                </span>
+              </BlurFade>
+
               <BlurFadeText
-                className="max-w-[600px] italic"
-                delay={BLUR_FADE_DELAY}
+                className="max-w-[500px] italic text-muted-foreground text-sm leading-relaxed"
+                delay={BLUR_FADE_DELAY * 3}
                 text={DATA.description}
               />
             </div>
+
+            {/* Right: avatar */}
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
+              <div className="relative">
+                <div className="absolute -inset-0.5 rounded-full bg-gradient-to-br from-neutral-200 to-neutral-400 dark:from-neutral-700 dark:to-neutral-900 blur-sm opacity-60" />
+                <Avatar className="relative size-28 border-2 border-white dark:border-neutral-900 shadow-lg">
+                  <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                  <AvatarFallback>{DATA.initials}</AvatarFallback>
+                </Avatar>
+              </div>
             </BlurFade>
           </div>
         </div>
       </section>
+
+      {/* ── ABOUT ────────────────────────────────────────────── */}
       <section id="about">
-        <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">About me</h2>
-        </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {DATA.summary}
-          </Markdown>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            <Link
-              href={DATA.contact.social.Resume.url}
-              className="underline cursor-pointer hover:text-gray-800 dark:hover:text-gray-200"
-            >
-              Check my resume
-            </Link>
-            {" "}
-            for detailed experience and projects
-          </p>
-        </BlurFade>
+        <div className="mx-auto w-full max-w-2xl space-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 3}>
+            <h2 className="text-xs font-semibold uppercase tracking-widest text-neutral-400">
+              About me
+            </h2>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 4}>
+            <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert leading-relaxed">
+              {DATA.summary}
+            </Markdown>
+            <p className="text-sm text-muted-foreground mt-2">
+              <Link
+                href={DATA.contact.social.Resume.url}
+                className="underline underline-offset-4 decoration-neutral-300 dark:decoration-neutral-700 hover:decoration-neutral-600 dark:hover:decoration-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors"
+              >
+                Check my resume
+              </Link>
+              {" "}for detailed experience and projects
+            </p>
+          </BlurFade>
+        </div>
       </section>
 
-      <SkillsSection />
+      {/* ── TECH STACK ───────────────────────────────────────── */}
+      <section id="skills">
+        <div className="mx-auto w-full max-w-2xl">
+          <SkillsSection />
+        </div>
+      </section>
 
       {/* <section id="projects">
         <div className="space-y-12 w-full py-12">
@@ -103,32 +131,37 @@ export default function Page() {
           </div>
         </div>
       </section> */}
+
+      {/* ── HACKATHONS / EVENTS ──────────────────────────────── */}
       <section id="hackathons">
-        <div className="space-y-12 w-full py-12">
+        <div className="mx-auto w-full max-w-2xl space-y-10">
+
+          {/* Header */}
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Competitions & Events
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+            <div className="space-y-3">
+              <h2 className="text-xs font-semibold uppercase tracking-widest text-neutral-400">
+                Competitions & Events
+              </h2>
+              <div className="flex flex-col gap-1">
+                <p className="text-2xl font-bold tracking-tight">
                   I thrive on challenges
-                </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed max-w-xl">
                   During my time in university, I participated in{" "}
-                  {DATA.events.length}+ events, including hackathons,
-                  cybersecurity competitions, and other technical challenges.
-                  These experiences brought people from across the school
-                  together to solve problems and create innovative solutions in
-                  a short time. It was inspiring to witness the creativity and
-                  passion of like-minded individuals pushing the boundaries of
-                  what we could achieve.
+                  <span className="font-medium text-foreground">
+                    {DATA.events.length}+ events
+                  </span>
+                  , including hackathons, cybersecurity competitions, and other
+                  technical challenges — pushing boundaries alongside
+                  like-minded people.
                 </p>
               </div>
             </div>
           </BlurFade>
+
+          {/* Event list */}
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+            <ul className="mb-4 ml-4 divide-y divide-dashed border-l border-neutral-200 dark:border-neutral-800">
               {DATA.events.map((project, id) => (
                 <BlurFade
                   key={project.title + project.dates}
@@ -148,31 +181,47 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+
+      {/* ── CONTACT ──────────────────────────────────────────── */}
       <section id="contact">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+        <div className="mx-auto w-full max-w-2xl py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+            <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/50 px-8 py-10 flex flex-col items-center text-center gap-4">
+
+              {/* Badge */}
+              <span className="text-xs font-semibold uppercase tracking-widest text-neutral-400">
                 Contact
-              </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              </span>
+
+              <h2 className="text-2xl font-bold tracking-tight sm:text-4xl">
                 Get in Touch
               </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+
+              <p className="max-w-md text-sm text-muted-foreground leading-relaxed">
                 Want to chat? Just shoot me a dm{" "}
                 <Link
                   href={DATA.contact.social.Facebook.url}
-                  className="text-blue-500 hover:underline"
+                  className="font-medium text-blue-500 hover:text-blue-600 underline underline-offset-4 decoration-blue-300 hover:decoration-blue-500 transition-colors"
                 >
                   with a direct question on Facebook
                 </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                and I&apos;ll respond whenever I can.{" "}
+                <span className="text-neutral-400 dark:text-neutral-600">
+                  I will ignore all soliciting.
+                </span>
               </p>
+
+              {/* CTA */}
+              <Link href={DATA.contact.social.Facebook.url}>
+                <button className="mt-2 px-5 py-2 rounded-full text-sm font-medium bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 hover:opacity-80 transition-opacity">
+                  Say hello →
+                </button>
+              </Link>
             </div>
           </BlurFade>
         </div>
       </section>
+
     </main>
   );
 }
