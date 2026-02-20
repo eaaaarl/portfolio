@@ -75,24 +75,33 @@ export const DATA = {
 
   education: [
     {
-      school: "Senior High School - Agusan Sur National High School",
-      href: "https://www.facebook.com/agsurhigh",
-      degree: "Computer Programming",
-      logoUrl: "/asnhs-logo.png",
-      start: "2018",
-      end: "2020",
-      description: "",
-    },
-    {
       school: "Northern Eastern Mindanao State University - Lianga Campus",
       href: "https://www.nemsu.edu.ph/",
       degree: "Bachelor of Science in Computer Science",
       logoUrl: "/nemsu-logo.png",
-      start: "2024",
+      start: "",
       end: "Present",
       description:
-        "3rd Year Computer Science Student • Expected Graduation 2026",
+        "",
     },
+    {
+      school: "Senior High School - Agusan Sur National High School",
+      href: "https://www.facebook.com/agsurhigh",
+      degree: "Computer Programming",
+      logoUrl: "/asnhs-logo.png",
+      start: "",
+      end: "2022",
+      description: "",
+    },
+    /*   {
+        school: "Pilot Central Elementary School",
+        href: "https://www.facebook.com/OFFICIALSFPCESWITHSPEDLC",
+        degree: "",
+        logoUrl: "/pilotcentral.jpg",
+        start: "",
+        end: "2016",
+        description: "",
+      }, */
   ],
   projects: [
     {

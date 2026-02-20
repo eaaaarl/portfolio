@@ -17,9 +17,9 @@ const skills: Record<string, string[]> = {
 
 const SkillsSection = () => {
   return (
-    <section className="py-8 px-4 max-w-2xl mx-auto">
+    <div className="flex flex-col gap-y-3">
       <BlurFade delay={BLUR_FADE_DELAY}>
-        <h2 className="text-sm font-semibold uppercase tracking-widest text-neutral-400 mb-6">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-neutral-400">
           Tech Stack
         </h2>
       </BlurFade>
@@ -29,7 +29,7 @@ const SkillsSection = () => {
           <BlurFade key={category} delay={BLUR_FADE_DELAY * (catIndex + 2)}>
             <div className="flex items-center gap-4">
               {/* Category label */}
-              <span className="w-20 shrink-0 text-xs text-neutral-400 dark:text-neutral-500 text-right">
+              <span className="w-20 shrink-0 text-xs text-neutral-400 dark:text-neutral-500 text-left">
                 {category}
               </span>
 
@@ -67,7 +67,7 @@ const SkillsSection = () => {
           </BlurFade>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

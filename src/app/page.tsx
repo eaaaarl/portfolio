@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { ResumeCard } from "@/components/resume-card";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -85,8 +86,39 @@ export default function Page() {
 
       {/* ── TECH STACK ───────────────────────────────────────── */}
       <section id="skills">
-        <div className="mx-auto w-full max-w-2xl">
+        <div className="mx-auto w-full max-w-2xl space-y-3">
           <SkillsSection />
+        </div>
+      </section>
+
+      {/* ── EDUCATION ────────────────────────────────────────── */}
+      <section id="education">
+        <div className="mx-auto w-full max-w-2xl space-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+            <h2 className="text-xs font-semibold uppercase tracking-widest text-neutral-400">
+              Education
+            </h2>
+          </BlurFade>
+          <div className="flex flex-col gap-4">
+            {DATA.education.map((education, id) => (
+              <BlurFade
+                key={education.school}
+                delay={BLUR_FADE_DELAY * 8 + id * 0.05}
+              >
+                <ResumeCard
+                  key={education.school}
+                  href={education.href}
+                  logoUrl={education.logoUrl}
+                  altText={education.school}
+                  title={education.school}
+                  subtitle={education.degree}
+                  period={`${education.end}`}
+                  description={education.description}
+                  isStatic={true}
+                />
+              </BlurFade>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -134,7 +166,7 @@ export default function Page() {
 
       {/* ── HACKATHONS / EVENTS ──────────────────────────────── */}
       <section id="hackathons">
-        <div className="mx-auto w-full max-w-2xl space-y-10">
+        <div className="mx-auto w-full max-w-2xl space-y-3">
 
           {/* Header */}
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
