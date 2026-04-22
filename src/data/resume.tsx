@@ -211,6 +211,16 @@ export const DATA = {
   ],
   events: [
     {
+      title: "2026 National Innovation Day",
+      dates: "April 21, 2026",
+      location: "HERO Learning Commons Building, Caraga State University, Ampayon, Butuan City",
+      description:
+        "Developed and pitched EyeSOS, an emergency response application that enables one-tap SOS alerts with automatic real-time location sharing to responders. Competed as a solo participant handling both development and pitching at the 2026 National Innovation Day, LUNSAD hosted by DOST Caraga, held at Caraga State University, Butuan City.",
+      image: "/dost_caraga.jpg",
+      mlh: "",
+      links: [],
+    },
+    {
       title: "Hack4Gov Capture the Flag",
       dates: "August 23 - 24, 2024",
       location: "Almont Inland Resort, Butuan City",
