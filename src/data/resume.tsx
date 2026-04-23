@@ -221,12 +221,32 @@ export const DATA = {
       links: [],
     },
     {
+      title: "Hackathon - CITE Techno Fair",
+      dates: "November 21 - 22, 2024",
+      location: "Tandag City, Surigao del Sur",
+      description:
+        "A cybersecurity hackathon held during the CITE Techno Fair, where our team built and presented a solution addressing real-world security challenges. Through effective collaboration and technical execution, we achieved 1st place in the competition.",
+      image: "/cite.png",
+      mlh: "",
+      links: [],
+    },
+    {
       title: "Hack4Gov Capture the Flag",
       dates: "August 23 - 24, 2024",
       location: "Almont Inland Resort, Butuan City",
       description:
         "Participated in my first cybersecurity Capture the Flag (CTF) competition, solving challenges in areas such as cryptography, web exploitation, and reverse engineering. It was an incredible learning experience that sharpened my problem-solving and teamwork skills.",
       image: "/hack4gov.jpg",
+      mlh: "",
+      links: [],
+    },
+    {
+      title: "Programming Competition - PSITE",
+      dates: "May 13 - 14, 2024",
+      location: "Caraga State University, Ampayon, Butuan City",
+      description:
+        "I participated in the Programming Competition, where I worked on solving algorithmic and logical programming problems under time pressure. The event challenged my problem-solving skills, coding efficiency, and ability to think critically while collaborating in a competitive environment.",
+      image: "",
       mlh: "",
       links: [],
     },
